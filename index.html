@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>X Puzzle — Support</title>
+<meta name="description" content="Support page for X Puzzle, a sliding-tile puzzle game for iPhone and iPad.">
+<style>
+  :root {
+    --bg: #1c1410;
+    --panel: #2a1f18;
+    --ink: #f4ead8;
+    --muted: #b8a98e;
+    --accent: #f0ad58;
+    --accent-soft: #ffe7b8;
+    --rule: #3d2c20;
+    --link: #ffd28a;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    background: radial-gradient(ellipse at top, #2c1d12 0%, #1c1410 60%, #110a06 100%);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 1.55;
+    min-height: 100vh;
+    padding: 48px 20px 80px;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+  header { text-align: center; margin-bottom: 48px; }
+  .logo {
+    display: inline-block;
+    background: var(--accent);
+    color: #2a1407;
+    font-weight: 800;
+    font-size: 34px;
+    letter-spacing: 0.5px;
+    padding: 12px 22px;
+    border-radius: 14px;
+    box-shadow: 0 6px 0 #b07729, 0 14px 30px rgba(0,0,0,0.4);
+    margin-bottom: 18px;
+    transform: rotate(-2deg);
+  }
+  h1 {
+    font-size: 28px;
+    margin: 12px 0 6px;
+    color: var(--accent-soft);
+    letter-spacing: 0.3px;
+  }
+  .tagline { color: var(--muted); margin: 0; font-size: 16px; }
+  section {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-bottom: 22px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  }
+  h2 {
+    font-size: 19px;
+    margin: 0 0 14px;
+    color: var(--accent);
+    letter-spacing: 0.4px;
+  }
+  h3 { font-size: 16px; margin: 18px 0 6px; color: var(--accent-soft); }
+  p, li { color: var(--ink); }
+  p { margin: 0 0 12px; }
+  ul { padding-left: 20px; margin: 0 0 12px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--link); text-decoration: none; border-bottom: 1px dotted var(--link); }
+  a:hover { color: #fff; border-bottom-color: #fff; }
+  .contact-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: #1f1611;
+    border: 1px solid var(--rule);
+    border-radius: 10px;
+    padding: 14px 18px;
+    margin-top: 14px;
+  }
+  .contact-row .label { color: var(--muted); font-size: 14px; min-width: 60px; }
+  .contact-row .value { font-size: 16px; }
+  details {
+    border-top: 1px solid var(--rule);
+    padding: 14px 0;
+  }
+  details:last-of-type { border-bottom: 1px solid var(--rule); }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--accent-soft);
+    list-style: none;
+    padding-right: 24px;
+    position: relative;
+  }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    color: var(--accent);
+    transition: transform 0.15s ease;
+  }
+  details[open] summary::after { content: "−"; }
+  details > p, details > ul { margin-top: 10px; }
+  footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: 36px;
+  }
+  footer a { color: var(--muted); border-bottom-color: var(--muted); }
+  @media (max-width: 480px) {
+    body { padding: 28px 14px 60px; }
+    section { padding: 20px; }
+    .logo { font-size: 28px; padding: 10px 18px; }
+    h1 { font-size: 22px; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">X PUZZLE</div>
+    <h1>Support</h1>
+    <p class="tagline">A sliding-tile puzzle for iPhone &amp; iPad.</p>
+  </header>
+
+  <section>
+    <h2>How to play</h2>
+    <p>Tap <strong>Play</strong>, pick a board size (anywhere from 3 × 3 to 5 × 5), then swipe tiles into the empty space until the numbers are in order. Your move count appears on screen — fewer moves is better, and your best scores are submitted to the Game Center leaderboard.</p>
+  </section>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+
+    <details>
+      <summary>Why doesn't my score appear on the leaderboard?</summary>
+      <p>Make sure you're signed in to Game Center on your device (Settings → Game Center). If you're signed in and scores still aren't appearing, your device may be offline — scores submit automatically once you reconnect.</p>
+    </details>
+
+    <details>
+      <summary>The game's audio is interrupting my music.</summary>
+      <p>Recent versions of X Puzzle mix audio with whatever else is playing and respect the silent switch. If you're on an older version, please update from the App Store.</p>
+    </details>
+
+    <details>
+      <summary>The app crashes or freezes on launch.</summary>
+      <p>Try the usual remedies first: force-quit the app and relaunch, restart your device, and make sure iOS is up to date.</p>
+    </details>
+
+    <details>
+      <summary>Can I reset a leaderboard entry?</summary>
+      <p>Leaderboard entries are managed by Apple's Game Center. You can hide or reset your scores in <em>Settings → Game Center → Profile &amp; Privacy</em>.</p>
+    </details>
+
+    <details>
+      <summary>Is the app available on Android?</summary>
+      <p>No — X Puzzle is iOS / iPadOS only.</p>
+    </details>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>X Puzzle does not collect, store, or transmit any personal data. The only network activity is communication with Apple's Game Center for leaderboard submissions, which is handled by Apple under their own privacy policy.</p>
+  </section>
+
+  <footer>
+    © Peter Purmonen
+  </footer>
+
+</div>
+</body>
+</html>
